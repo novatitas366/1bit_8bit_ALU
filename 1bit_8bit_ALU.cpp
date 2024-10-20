@@ -151,6 +151,7 @@ void ALU8bit(bool decoderoutput[], bool a[], bool b[], bool s[], bool output[], 
             c1=carryOut;
             carryOut=0;
         }
+
         for(int i = 7; i>=0; i--){
             if(output[i] == 0){
                 oneBit_ALU(b[0], output[i], 1, 1, s[1], s[2], c1, carryOut, output[i]);
@@ -206,34 +207,6 @@ void Sandauga(bool a[], bool b[], bool sandauga[], bool decoderoutput[], bool s[
             shiftA(kaire, a, a);
             shiftA(desine, b, b);
             k++;
-
-
-
-
-            // oneBit_ALU(sandauga[15], a[7], 1, 1, 1, 1, c1, carryOut, sandauga[15]);
-            // c1=carryOut;
-            // carryOut=0;
-            // oneBit_ALU(sandauga[14], a[6], 1, 1, 1, 1, c1, carryOut, sandauga[14]);
-            // c1=carryOut;
-            // carryOut=0;
-            // oneBit_ALU(sandauga[13], a[5], 1, 1, 1, 1, c1, carryOut, sandauga[13]);
-            // c1=carryOut;
-            // carryOut=0;
-            // oneBit_ALU(sandauga[12], a[4], 1, 1, 1, 1, c1, carryOut, sandauga[12]);
-            // c1=carryOut;
-            // carryOut=0;
-            // oneBit_ALU(sandauga[11], a[3], 1, 1, 1, 1, c1, carryOut, sandauga[11]);
-            // c1=carryOut;
-            // carryOut=0;
-            // oneBit_ALU(sandauga[10], a[2], 1, 1, 1, 1, c1, carryOut, sandauga[10]);
-            // c1=carryOut;
-            // carryOut=0;
-            // oneBit_ALU(sandauga[9], a[1], 1, 1, 1, 1, c1, carryOut, sandauga[9]);
-            // c1=carryOut;
-            // carryOut=0;
-            // oneBit_ALU(sandauga[8], a[0], 1, 1, 1, 1, c1, carryOut, sandauga[8]);
-            // c1=carryOut;
-            // carryOut=0;
             
         }
 
